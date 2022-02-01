@@ -58,6 +58,7 @@ alcali-package-install-git-latest:
     - target: {{ alcali.deploy.directory }}/code
     - user: {{ alcali.deploy.user }}
     - rev: {{ alcali.deploy.rev }}
+    - force_reset: {{ alcali.deploy.force_reset }}
 
 alcali-package-install-virtualenv-managed:
   virtualenv.managed:
