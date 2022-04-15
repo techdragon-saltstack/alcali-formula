@@ -12,7 +12,7 @@
       'Arch': ['mariadb-libs'],
       'Debian': ['default-libmysqlclient-dev', 'python3-dev'],
       'FreeBSD': ['curl'],
-  }.get(grains.os_family) %}
+  }.get(grains.os_family,[]) %}
 {% elif alcali.config.db_backend == 'postgresql' %}
   {% set db_connector = 'psycopg2' %}
   {% set db_requirements = {
@@ -20,7 +20,7 @@
       'Arch': ['postgresql-libs'],
       'Debian': ['libpq-dev', 'python3-dev'],
       'FreeBSD': ['postgresql-libpqxx'],
-  }.get(grains.os_family) %}
+  }.get(grains.os_family,[]) %}
 {% endif %}
 
 {% set venv_requirements = {
