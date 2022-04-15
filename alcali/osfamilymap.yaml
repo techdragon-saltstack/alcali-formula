@@ -28,7 +28,7 @@ FreeBSD:
     directory: /usr/local/share/alcali
   service:
     init_delay: 3  # First time, it may takes a little time to gunicorn to pop
-  ldap_pks: ['openldap-sasl-client']
+  ldap_pks: ['openldap26-client']
   rootgroup: wheel
 
 OpenBSD:
