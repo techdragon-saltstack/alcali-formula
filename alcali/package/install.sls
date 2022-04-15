@@ -19,7 +19,6 @@
       'RedHat': ['libpq-devel', 'python3-devel'],
       'Arch': ['postgresql-libs'],
       'Debian': ['libpq-dev', 'python3-dev'],
-      'FreeBSD': ['postgresql-libpqxx'],
   }.get(grains.os_family,[]) %}
 {% endif %}
 
