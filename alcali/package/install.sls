@@ -26,7 +26,7 @@
     'RedHat': ['python-virtualenv'],
     'Arch': ['python-virtualenv'],
     'Debian': ['virtualenv', 'python3-pip', 'python3-virtualenv', 'python3-venv'],
-    'FreeBSD': ['py38-pip', 'py38-virtualenv'],
+    'FreeBSD': ['py39-pip', 'py39-virtualenv'],
 }.get(grains.os_family) %}
 
 {%- if alcali.config.auth_backend == 'ldap' %}
