@@ -33,4 +33,7 @@ alcali:
     allowed_hosts: '*'
     salt_url: 'https://master:8080'
     salt_auth: alcali
+    django_superuser_username: 'alcali'
+    django_superuser_password: 'alcali'
+    django_superuser_email: 'alcali@example.com'
   ldap_pkgs: []
